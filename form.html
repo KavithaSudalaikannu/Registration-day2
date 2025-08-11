@@ -1,0 +1,128 @@
+<!Doctype html>
+<head>
+ <title>Student_Registration</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+</style>
+<
+
+  form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    padding: 8px;
+  }body>
+  
+ <center>
+ <h1>STUDENT REGISTRATION FORM</h1>
+</center>
+
+<form>
+<table>
+ <tr>
+  <td>Name</td><td><input type="text" id="name"></td>
+ </tr>
+ <tr>
+  <td>Email</td><td><input type="email" id="email"></td>
+ </tr>
+<tr>
+  <td>Age</td><td><input type="age"id="age"></td>
+ </tr>
+
+<tr>
+  <td>Gender</td>
+      <td>
+          <input type="radio" name="gender" id="gender">Male
+          <input type="radio" name="gender" id="gender">Female
+      </td>
+ </tr>
+
+<tr>
+<td>Department</td>
+ <td>
+   <select id="department">
+    <option>Information Technology</option>
+    <option>CSE</option>
+    <option>ECE</option>
+    <option>CIVIL</option>
+   </select>
+ </td>
+</tr>
+
+<tr>
+<td>Year</td>
+<td>
+<select id="year">
+ <option>I</option>
+ <option>II</option>
+ <option>III</option></td>
+</tr>
+
+<tr>
+<td>Section</td>
+<td>
+<select id"section">
+ <option>A</option>
+ <option>B</option>
+ <option>C</option></td>
+</tr>
+
+<tr>
+<td>Project Title</td><td><input type="text" id="project"></td>
+</tr>
+
+<tr>
+<td>Start Date</td><td><input type="date"id="Start Date"></td>
+</tr>
+
+<tr>
+<td>End Date</td><td><input type="date"id="End Date"></td>
+</tr>
+
+<tr>
+  <td><input type="checkbox" id="agree"></td>
+<td>I agree and continue</td></tr>
+
+<tr>
+<td><input type="submit"id="submit"></td></tr>
+
+</table>
+</form>
+
+  <script>
+Function validateform(){
+ let name = document.getElementById("name").value.trim();
+ let email = document.getElementById("email").value.trim();
+ let age = document.getElementById("age").value;
+ let gender = document.getElementById("gender").value;
+ let department = document.getElementById("department").value;
+ let year = document.getElementById("year").value;
+let project Title = document.getElementById("project").value;
+ let section = document.getElementById("section").valu;
+ let  agree =document.getElementById("agree").value;
+ let Start Date = document.getElementById(" Start Date").value;
+ let end Date = document.getElementById("end Date").value;
+
+if (name === "" || email === "" || department === "" || gender ==="" ||age ===""|| year===""||project Title ===""|| section ===""|| Start Date ===""|| end Date ===""|| !agree) {
+    alert("Please fill all fields and agree to the terms.");
+    return false;
+  }
+  return true;}
+
+ </script>
+</body>
+</html>
