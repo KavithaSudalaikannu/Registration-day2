@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <center>
+    <h1>STUDENT REGISTRATION FORM</h1>
+  </center>
+
+  <form onsubmit="return validateForm()">
+    <table>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" id="name"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" id="email"></td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td><input type="number" id="age"></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" value="Male">Male
+          <input type="radio" name="gender" value="Female">Female
+        </td>
+      </tr>
+      <tr>
+        <td>Department</td>
+        <td>
+          <select id="department">
+            <option value="">--Select--</option>
+            <option>Information Technology</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>CIVIL</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Year</td>
+        <td>
+          <select id="year">
+            <option value="">--Select--</option>
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Section</td>
+        <td>
+          <select id="section">
+            <option value="">--Select--</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Project Title</td>
+        <td><input type="text" id="project"></td>
+      </tr>
+      <tr>
+        <td>Start Date</td>
+        <td><input type="date" id="startDate"></td>
+      </tr>
+      <tr>
+        <td>End Date</td>
+        <td><input type="date" id="endDate"></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="agree"></td>
+        <td>I agree and continue</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
